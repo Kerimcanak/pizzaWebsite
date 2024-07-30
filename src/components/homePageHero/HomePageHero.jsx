@@ -5,19 +5,11 @@ import logo from "/logo.svg"
 function HomePageHero() {
     return (
         <>
-            <Card className="mb-0" style={{border: 0, borderRadius: 0}}>
-                <CardImg
-                alt="Card image cap"
-                src="https://picsum.photos/900/180"
-                style={{
-                    height: 180
-                }}
-                top
-                width="100%"
-                />
-                <CardBody style={{border: 0, borderRadius: 0}}>
+        <Card className="bg-dark text-white" style={{border: 0, borderRadius: 0}}>
+            <CardImg top width="100%" src={homebanner} alt="Card image cap" className="card-img" style={{border: 0, borderRadius: 0}}/>
+            <div className="card-img-overlay">
                 <CardTitle tag="h5">
-                    Card Title
+                    <img src={logo} alt="logo" ></img>
                 </CardTitle>
                 <CardText>
                     This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
@@ -27,9 +19,8 @@ function HomePageHero() {
                     Last updated 3 mins ago
                     </small>
                 </CardText>
-                </CardBody>
-            </Card>
-            
+            </div>
+        </Card>
         </>
     )
 }
