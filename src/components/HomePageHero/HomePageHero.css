@@ -1,0 +1,26 @@
+.CardTitle {
+    font-family: 'Roboto Condensed';
+    font-weight: 200;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .CardTitle span {
+    font-family: "Satisfy";
+    color: #fdc913;
+    font-size: 2rem;
+  }
+  
+  /* Media queries */
+  @media (max-width: 576px) {
+    .CardTitle {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 276px) {
+    .CardTitle span {
+      font-size: 1rem;
+    }
+  }
+  
