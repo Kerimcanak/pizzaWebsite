@@ -7,20 +7,21 @@ function HomePageHero() {
         <>
         <Card className="bg-dark text-white" style={{border: 0, borderRadius: 0}}>
             <CardImg top width="100%" src={homebanner} alt="Card image cap" className="card-img" style={{border: 0, borderRadius: 0}}/>
-            <div className="card-img-overlay">
-                <CardTitle tag="h5">
+            <div className="card-img-overlay d-flex flex-column justify-content-center">
+                <CardTitle tag="h5" className="text-center">
                     <img src={logo} alt="logo" ></img>
                 </CardTitle>
-                <CardText>
-                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </CardText>
-                <CardText>
+                <CardTitle tag="h5" className="text-center">
+                    <img src={logo} alt="logo" ></img>
+                </CardTitle>
+                <CardText className="text-center">
                     <small className="text-muted">
                     Last updated 3 mins ago
                     </small>
                 </CardText>
             </div>
         </Card>
+
         </>
     )
 }
