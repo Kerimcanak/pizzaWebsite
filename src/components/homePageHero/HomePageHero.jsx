@@ -1,10 +1,37 @@
+import { Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
+import homebanner from "/home-banner.png";
+import logo from "/logo.svg"
+
 function HomePageHero() {
     return (
         <>
-            <div className="w-25 h-100" style={{backgroundColor: "blue",}} >
-            </div>
+            <Card className="mb-0" style={{border: 0, borderRadius: 0}}>
+                <CardImg
+                alt="Card image cap"
+                src="https://picsum.photos/900/180"
+                style={{
+                    height: 180
+                }}
+                top
+                width="100%"
+                />
+                <CardBody style={{border: 0, borderRadius: 0}}>
+                <CardTitle tag="h5">
+                    Card Title
+                </CardTitle>
+                <CardText>
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                </CardText>
+                <CardText>
+                    <small className="text-muted">
+                    Last updated 3 mins ago
+                    </small>
+                </CardText>
+                </CardBody>
+            </Card>
+            
         </>
     )
 }
 
-export default HomePageHero
+export default HomePageHero;
