@@ -4,7 +4,7 @@ function HomePageMain () {
     return (
         <>
 
-<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start', width: '100vw', height: '100vh', backgroundColor: '#faf7f2'}}>
+<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start', width: '100vw', height: '100vh', backgroundColor: '#faf7f2', paddingTop: '100px', gap: '20px'}}>
  
                 <Card
                 style={{
