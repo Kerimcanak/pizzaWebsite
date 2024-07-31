@@ -1,11 +1,10 @@
-import { NavLink } from "react-router-dom"
-import { Nav, Navbar, NavItem } from "reactstrap"
+import { Nav, Navbar, NavItem, NavLink } from "reactstrap"
 
 function HomePageNav() {
 
     return (
         <>
-            <Navbar id="#1" color="light" light expand="md">
+         <Navbar id="contents" color="light" light expand="md">
                 <Nav navbar>
                     <NavItem>
                         <NavLink href="#">
@@ -45,6 +44,8 @@ function HomePageNav() {
                     </NavItem>
                 </Nav>
             </Navbar>
+
+            
         </>
     )
 }

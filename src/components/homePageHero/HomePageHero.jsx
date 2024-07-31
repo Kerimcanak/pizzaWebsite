@@ -1,4 +1,4 @@
-import { Button, Card, CardImg, CardTitle, Nav, Navbar, NavItem, NavLink } from "reactstrap";
+import { Button, Card, CardImg, CardTitle} from "reactstrap";
 import homebanner from "/home-banner.png";
 import logo from "/logo.svg"
 import "./HomePageHero.css"
@@ -22,63 +22,27 @@ function HomePageHero() {
 
 
                     <Button
-                        className="mx-auto"
-                        style={{
-                            width: '10rem',
-                            backgroundColor: '#fdc913',
-                            color: 'black', // add this line for black text color
-                            borderRadius: '1.5rem', // add this line for rounded corners
-                            padding: '0.7rem 2rem',
-                            fontFamily: "Barlow, sans-serif",
-                            fontWeight: '600',
-                        }}
-                        href="#1">
-                        ACIKTIM
-                    </Button>                
+                    className="mx-auto"
+                    href="#contents"
+                    style={{
+                        width: '10rem',
+                        backgroundColor: '#fdc913',
+                        color: 'black',
+                        borderRadius: '1.5rem',
+                        padding: '0.7rem 2rem',
+                        fontFamily: "Barlow, sans-serif",
+                        fontWeight: '600',
+                    }}
+                    onClick={() => {
+                        document.getElementById('contents').scrollIntoView({ behavior: 'smooth' });
+                    }}>
+                    ACIKTIM
+                </Button>
+                            
                 </div>
             </Card>
 
-            <Navbar id="#1" color="light" light expand="md">
-                <Nav navbar>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="YENİ!" />
-                            <span> YENİ! Kore</span>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="Pizza" />
-                            <span> Pizza</span>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="Burger" />
-                            <span> Burger</span>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="Kızartmalar" />
-                            <span> Kızartmalar</span>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="Fast food" />
-                            <span> Fast food</span>
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink href="#">
-                            <img src="https://picsum.photos/40/40" alt="Gazlı İçecek" />
-                            <span> Gazlı İçecek</span>
-                        </NavLink>
-                    </NavItem>
-                </Nav>
-            </Navbar>
-
+           
 
         </>
     )
