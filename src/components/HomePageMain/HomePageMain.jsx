@@ -4,7 +4,7 @@ function HomePageMain () {
     return (
         <>
 
-<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start', width: '100vw', height: '200vh', backgroundColor: '#faf7f2', paddingTop: '100px', gap: '20px'}}>
+<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'flex-start', width: '100vw', height: '90vh', backgroundColor: '#faf7f2', paddingTop: '100px', gap: '20px'}}>
  
                 <Card
                 style={{
@@ -89,7 +89,12 @@ function HomePageMain () {
                 </Card>
                 </div>
 
+                
+
             </div>
+
+            
+
         </>
     )
 }
