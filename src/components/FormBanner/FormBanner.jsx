@@ -1,6 +1,5 @@
-import React from "react";
 import { Card, CardImg, CardBody, CardText, CardTitle } from "reactstrap";
-import formbannerimage from "./images/form-banner.png"
+import formbannerimage from "/form-banner.png"
 
 function FormBanner() {
     return (
