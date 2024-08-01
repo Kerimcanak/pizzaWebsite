@@ -1,10 +1,8 @@
 import { Navbar, NavbarBrand } from "reactstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from "./logo.svg"
-import FormBanner from '../FormBanner.jsx'
-import Formİcerik from "../Formİcerik.jsx";
-import Footer from '../Footer';
-import Copyright from '../Copyright';
+import logo from "/logo.svg"
+import FormBanner from "../components/FormBanner/FormBanner.jsx"
+import Formİcerik from "../components/FormIcerik/Formİcerik.jsx"
+import Footer from "../components/Footer/Footer.jsx";
 
 
 function OrderPizzaITwo() {
@@ -42,7 +40,6 @@ function OrderPizzaITwo() {
         <Formİcerik/>
         <Footer/>
 
-        <Copyright/>
 
           </>
           
