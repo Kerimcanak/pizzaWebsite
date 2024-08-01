@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Dropdown, DropdownMenu, DropdownToggle, DropdownItem, FormGroup, Label, Input, Card, CardTitle, FormFeedback, FormText, ButtonGroup, CardText, CardHeader, CardFooter, CardBody } from "reactstrap";
-import { BrowserRouter as Link  } from 'react-router-dom';
 import { Axios } from "axios";
+import { Link } from "react-router-dom";
 
 
 function Formİcerik() {
@@ -255,6 +255,7 @@ function Formİcerik() {
                     Toplam: {(quantity * pizzaPrice + doughPrice + selectedOption)}₺
                     </CardTitle>
                 </CardBody>
+                <button style={{backgroundColor: '#c20608', borderColor: '#c20608', width: '287px'}} onClick={() => sendToAxios()}>Sipariş ver!</button>
                 <Link to={{
                     pathname: "/success", 
                     state: {
